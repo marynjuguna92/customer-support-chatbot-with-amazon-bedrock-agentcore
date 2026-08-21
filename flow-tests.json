@@ -1,0 +1,22 @@
+{
+  "flowInputNode": {
+    "nodeName": "FlowInputNode"
+  },
+  "tests": [
+    {
+      "id": "test-bug-report-1",
+      "prompt": "The checkout page crashes with an error when I try to submit my payment using Chrome.",
+      "expected": "Collects bug details and initiates a support ticket."
+    },
+    {
+      "id": "test-platform-faq-1",
+      "prompt": "How long does standard shipping take?",
+      "expected": "Provides the correct shipping duration from the FAQ."
+    },
+    {
+      "id": "test-other-request-1",
+      "prompt": "Can I update my account password and change my username?",
+      "expected": "Directs the customer to the support phone number."
+    }
+  ]
+}
