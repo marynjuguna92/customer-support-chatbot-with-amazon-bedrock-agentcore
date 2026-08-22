@@ -1,0 +1,17 @@
+--- CHAT TRANSCRIPT: BUG REPORT WORKFLOW ---
+
+Customer: Hi, the checkout page crashes with an error when I try to submit my payment using Chrome.
+
+Assistant: Thank you for reporting a bug. To proceed, I need the following information:
+
+1. Description of the bug – what went wrong?
+2. Steps to reproduce – how did you encounter this issue?
+3. Environment information – what device, browser, or OS did you use?
+
+Please provide the missing details so I can create a ticket for you.
+
+Customer: It throws a 500 internal server error right after clicking 'Confirm Order'. I clicked 'Confirm Order' on the final payment screen. I'm using Chrome on macOS Sonoma.
+
+Assistant: Thank you! I have successfully created your bug report ticket in our system. Our engineering team will look into the payment crash on Chrome immediately.
+
+[TOOL CALL EXECUTION]: bugreports___create_bug_report invoked successfully. Record persisted to DynamoDB table: bug-report-tool-stack-bug-reports.
