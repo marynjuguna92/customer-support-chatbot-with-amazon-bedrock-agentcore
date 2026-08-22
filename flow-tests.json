@@ -6,17 +6,17 @@
     {
       "id": "test-bug-report-1",
       "prompt": "The checkout page crashes with an error when I try to submit my payment using Chrome.",
-      "expected": "Collects bug details and initiates a support ticket."
+      "expected": "Thank you for reporting a bug. To proceed, I need the following information: 1. Description of the bug – what went wrong? 2. Steps to reproduce – how did you encounter this issue? 3. Environment information – what device, browser, or OS did you use? Please provide the missing details so I can create a ticket for you."
     },
     {
       "id": "test-platform-faq-1",
       "prompt": "How long does standard shipping take?",
-      "expected": "Provides the correct shipping duration from the FAQ."
+      "expected": "Standard shipping takes 1-2 business days for processing, with delivery times calculated at checkout based on your location."
     },
     {
       "id": "test-other-request-1",
-      "prompt": "Can I update my account password and change my username?",
-      "expected": "Directs the customer to the support phone number."
+      "prompt": "Can I update my account password and change my account username?",
+      "expected": "You can reset your password via the \"Forgot password\" link on the sign-in page. Account usernames cannot be changed; contact support via the site contact form or reply to your order emails for further assistance. Support hours are Monday–Friday."
     }
   ]
 }
