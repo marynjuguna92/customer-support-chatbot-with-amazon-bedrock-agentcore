@@ -1,8 +1,9 @@
---- CHAT TRANSCRIPT: BUG REPORT WORKFLOW ---
+AMAZON BEDROCK FLOW CHAT SESSION (chat.py)
 
-Customer: Hi, the checkout page crashes with an error when I try to submit my payment using Chrome.
+User: The checkout page crashes with an error when I try to submit my payment using Chrome.
 
-Assistant: Thank you for reporting a bug. To proceed, I need the following information:
+Bot Response:
+Thank you for reporting a bug. To proceed, I need the following information:
 
 1. Description of the bug – what went wrong?
 2. Steps to reproduce – how did you encounter this issue?
@@ -10,8 +11,26 @@ Assistant: Thank you for reporting a bug. To proceed, I need the following infor
 
 Please provide the missing details so I can create a ticket for you.
 
-Customer: It throws a 500 internal server error right after clicking 'Confirm Order'. I clicked 'Confirm Order' on the final payment screen. I'm using Chrome on macOS Sonoma.
+User: I clicked the final payment button and it threw a 500 server error.
 
-Assistant: Thank you! I have successfully created your bug report ticket in our system. Our engineering team will look into the payment crash on Chrome immediately.
-
-[TOOL CALL EXECUTION]: bugreports___create_bug_report invoked successfully. Record persisted to DynamoDB table: bug-report-tool-stack-bug-reports.
+Bot Response:
+{
+  "classification": "BUG_REPORT",
+  "path": "BugReportPath",
+  "status": "success",
+  "message": "Bug report successfully filed in DynamoDB.",
+  "tool_response": {
+    "messageVersion": "1.0",
+    "response": {
+      "actionGroup": "BugReportingActionGroup",
+      "function": "create_bug_report",
+      "functionResponse": {
+        "responseBody": {
+          "TEXT": {
+            "body": "{\"ticketId\": \"032470b7-43d3-4ce4-ae06-a003d1055edf\", \"status\": \"OPEN\"}"
+          }
+        }
+      }
+    }
+  }
+}
